@@ -1,0 +1,220 @@
+.sidebar {
+  width: 5rem;
+  background-color: #0d041d !important;
+}
+
+.sidebarToggle {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.1em;
+}
+.navHeader {
+  font-size: 0.7em;
+}
+.sidebar .navIconBody div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sidebarToggle img {
+  width: 40px;
+  height: auto;
+  max-width: 100px;
+}
+.sidebar img {
+  margin-left: 1em;
+  width: 50px;
+  max-width: 100%;
+}
+
+.cancelIcon {
+  display: none;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgb(241 0 136);
+  padding: 1.5em 0 !important;
+  border-radius: 0 !important;
+}
+
+.nav_link:hover {
+  background-color: rgba(241, 0, 137, 0.225);
+}
+
+.sidebar button {
+  margin-top: 10em !important;
+  background-color: antiquewhite !important;
+}
+
+.sidebarBtn {
+  padding: 0.5em;
+  border-radius: 0.4em;
+  background-color: #04001db5 !important;
+  position: absolute;
+}
+
+.sidebarBtn svg {
+  /* filter: invert(1); */
+  fill: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.sidebarDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1em 1em 1em 0.5em;
+}
+.sidebarDiv nav img {
+  display: none;
+}
+.nav_body {
+  display: none;
+}
+
+@media screen and (max-width: 1023.5px) {
+  .sidebarDiv {
+    z-index: 100 !important;
+  }
+
+  .sidebar img {
+    margin-left: 0;
+    width: 50px;
+    max-width: 100%;
+  }
+  .sidebarToggle {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0.1em;
+  }
+  .sidebarToggle img {
+    position: unset;
+  }
+  .cancelIcon {
+    display: block;
+  }
+  .sidebarDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sidebarToggle img {
+    margin-left: 2.5em;
+  }
+  .sidebar .navIcon {
+    display: none;
+  }
+
+  .sidebarToggle img,
+  .sidebarBtn {
+    width: 30px;
+    height: auto;
+  }
+  .sidebarToggle {
+    margin-top: 0;
+    align-items: center;
+  }
+  .sidebar {
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.369) !important;
+    border-radius: 12px;
+  }
+  .sidebar section a .navIcon {
+    display: none;
+  }
+  .sidebarDiv nav img {
+    display: block;
+  }
+  .nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: rgba(33, 0, 47, 0.124);
+    padding: 1em !important;
+    border-radius: 0 !important;
+  }
+
+  .nav_link svg {
+    width: 2em;
+    height: 2em;
+  }
+  .nav_link h4 {
+    font-size: 1.3em;
+  }
+
+  .nav_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav_socialMedia {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_socialMedia div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_socialMedia div a {
+    display: flex;
+    margin-top: 1em;
+  }
+  .nav_socialMedia div a img {
+    margin: 0;
+    border: 1px rgb(251, 0, 251) solid;
+    padding: 0.4em;
+    border-radius: 0.2em;
+    width: 40px;
+  }
+  .sidebar {
+    padding: 3em;
+  }
+  .nav_body_head {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_body_head img {
+    margin-left: 0;
+    width: 70px;
+  }
+  .nav_body_head h1 {
+    font-size: 1.5em;
+  }
+  .nav_body_head h5 {
+    font-size: 0.9em;
+    color: aqua;
+  }
+  .sidebarBody {
+    width: 100%;
+    height: 100vw;
+  }
+}

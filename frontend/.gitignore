@@ -1,0 +1,53 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# unsed files
+/constants
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+.env
+.env.local
+
+# misc
+.DS_Store
+*.pem
+
+
+
+import React from "react";
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import {
+  PrevButton,
+  NextButton,
+  usePrevNextButtons,
+} from "./EmblaCarouselArrowButtons";
+import imageByIndex from "./imageByIndex";
+import styles from "./css/index.module.css";
+import { useSelector } from "react-redux";
+import Review from "../../Home/Spotlight/Review";
+import rootReducer, { RootState } from "../../../redux/store";
+
+type PropType = {
+  slides: number[];
+  options?: EmblaOptionsType;
+};
+
+const EmblaCarousel: React.FC<PropType> = () => {
+  const game = useSelector((state: RootState) => state.game);
+  const logo = useSelector((state: RootState) => state.logo);
+  const developer = useSelector((state: RootState) => state.developer);
+  const operatingSystem = useSelector(
+    (state: RootState) => state.operatingSystem
+  );

@@ -1,0 +1,115 @@
+.h1Text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.hrefText {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+/* index.module.css */
+
+/* Styling headings h1 to h6 */
+.PortableText h1,
+.PortableText h2,
+.PortableText h3,
+.PortableText h4,
+.PortableText h5,
+.PortableText h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  line-height: normal;
+}
+
+.PortableText h1 {
+  font-size: 2.25em; /* 36px */
+}
+
+.PortableText h2 {
+  font-size: 1.875em; /* 30px */
+}
+
+.PortableText h3 {
+  font-size: 1.5em; /* 24px */
+}
+
+.PortableText h4 {
+  font-size: 1.25em; /* 20px */
+}
+
+.PortableText h5 {
+  font-size: 1.125em; /* 18px */
+}
+
+.PortableText h6 {
+  font-size: 1em; /* 16px */
+}
+
+/* Styling unordered lists and list items */
+.PortableText ul {
+  list-style: none;
+  padding: 0;
+}
+
+.PortableText li {
+  font-family: Arial, sans-serif;
+  font-size: 1em; /* 16px */
+  margin-bottom: 1em;
+}
+
+.PortableText ul li::before {
+  content: "\2022"; /* Bullet character */
+  color: white; /* Bullet color */
+  font-size: 1.5em; /* Bullet size */
+  margin-right: 0.5em; /* Spacing between bullet and list item text */
+}
+
+/* Styling hyperlinks */
+.PortableText a {
+  color: white; /* Change color as per your design */
+  text-decoration: none;
+}
+
+.PortableText a:hover {
+  text-decoration: underline;
+}
+
+/* Styling blockquotes */
+.PortableText blockquote {
+  font-style: italic;
+  border-left: 5px solid white; /* Change color as per your design */
+  padding-left: 1em;
+  margin: 1em 0;
+}
+
+.PortableText p {
+  padding: 0.5em 0;
+}
+
+@media screen and (max-width: 400px) {
+  .PortableText h1 {
+    font-size: 1.5em; /* 36px */
+  }
+
+  .PortableText h2 {
+    font-size: 1.1em; /* 30px */
+  }
+
+  .PortableText h3 {
+    font-size: 1em; /* 24px */
+  }
+
+  .PortableText h4 {
+    font-size: 0.9em; /* 20px */
+  }
+
+  .PortableText h5 {
+    font-size: 0.8em; /* 18px */
+  }
+
+  .PortableText h6 {
+    font-size: 0.7em; /* 16px */
+  }
+}

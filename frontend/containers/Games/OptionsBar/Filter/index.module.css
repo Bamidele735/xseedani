@@ -1,0 +1,162 @@
+.Genre {
+  width: 100%;
+  overflow: auto;
+}
+.filterGamesHeader {
+  display: flex;
+  background-color: #2d0967;
+  padding: 2em 2em;
+  border-radius: 1em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5em;
+}
+.filter_Search_Box input {
+  width: 100%;
+  padding: 1em 1em;
+  background-color: #210d42;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0.5em;
+}
+.Genre button {
+  width: 60%;
+  padding: 1em 1em;
+  background-color: #210d42;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0.5em;
+}
+
+.Genre button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.Genre a {
+  font-size: 0.6em !important;
+  padding: 0.2em 0.8em !important;
+  color: gainsboro;
+}
+
+.dropDown_bg {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(36, 36, 36, 0.24);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.dropDown_bg a:hover {
+  background-color: aliceblue;
+  color: purple;
+}
+
+.genre_flex {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.genre_flex button svg {
+  color: white;
+}
+.filterGamesDropDowDiv {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .filter_Search_Box header,
+  .genre_flex header {
+    font-size: 0.8em;
+  }
+  .filter_Search_Box input,
+  .Genre button {
+    width: 100px;
+    padding: 0.6em 0.5em;
+    background-color: #210d42;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+  }
+  .filterGamesHeader {
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 100vw;
+    overflow: auto;
+    margin-top: 2em;
+  }
+
+  .filterGamesHeader::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+
+  .filterGamesHeader::-webkit-scrollbar-thumb {
+    background-color: #05183c; /* Color of the scrollbar thumb */
+    border-radius: 2px; /* Radius of the scrollbar thumb corners */
+  }
+
+  .filterGamesHeader::-webkit-scrollbar-track {
+    background-color: #040a5b; /* Color of the scrollbar track */
+  }
+
+  .filterGamesHeader {
+    scrollbar-width: thin; /* For Firefox */
+  }
+
+  .filterGamesHeader::-webkit-scrollbar-corner {
+    display: none; /* Hide the scrollbar corner (only for Webkit-based browsers) */
+  }
+
+  .genre_flex {
+    margin: 0 1em;
+  }
+  /* .Genre button {
+    width: 100%;
+  } */
+
+  .dropDown_bg div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .dropDown_bg div label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* .genre_flex {
+    width: 60%;
+  } */
+}
+@media screen and (max-width: 390px) {
+  /* .genre_flex {
+    width: 60vw;
+  } */
+  .filterGamesDropDowDiv {
+    width: 100vw;
+  }
+}

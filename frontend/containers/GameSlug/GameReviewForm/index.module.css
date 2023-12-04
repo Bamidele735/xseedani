@@ -1,0 +1,15 @@
+.reviewBtn button {
+  margin-top: 0.5em;
+  padding: 0.5em 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .formBody textarea {
+    height: 80px;
+  }
+
+  .formBody label {
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+  }
+}

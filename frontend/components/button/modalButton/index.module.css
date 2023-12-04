@@ -1,0 +1,18 @@
+/* index.module.css */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #630bf1;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #630bf1, #3b0298);
+}

@@ -1,0 +1,456 @@
+.tableBody {
+  width: 100%;
+}
+.showMoreButton {
+  margin: 1em auto;
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%;
+  color: white;
+  background: linear-gradient(to right, #ff8c00, #ff4500);
+  transition: background 0.3s ease;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.showMoreButton:hover {
+  background: linear-gradient(to right, #ff4500, #ff8c00);
+}
+
+.tableSection {
+  margin-top: 2em;
+}
+
+.theadBody tr th:first-child {
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+
+.theadBody tr th:last-child {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.theadBody {
+  border-radius: 0.6em !important;
+  background-color: #210d42;
+  /* border-left: 0;
+  border-right: 0;
+  border-top: 0.5em solid #0a0e25;
+  border-bottom: 0.5em solid #0a0e25; */
+}
+
+.theadBody tr th {
+  padding: 1em 0;
+}
+
+.Rating {
+  background-color: #210d42;
+
+  padding: 1.5em;
+  border-radius: 0.5em;
+  margin: 1em auto;
+}
+
+.tr_tbody {
+}
+.tr_td {
+  border-radius: 0.5em;
+  margin: 0;
+  padding: 0;
+  background-color: #210d42;
+}
+.tr_td td {
+  border-left: 0;
+  border-right: 0;
+  border-top: 1em solid #0a0e25;
+  border-bottom: 1em solid #0a0e25;
+  box-sizing: border-box;
+  width: 12.5% !important;
+}
+
+.gameIcon {
+  margin-top: 0.8em;
+}
+
+.gameIcon img {
+  width: 50px;
+  border-radius: 0.3em;
+  height: 40px;
+  object-fit: cover;
+  background-color: aliceblue;
+}
+
+.Rating header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.ratingNumber {
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+.ratingNumber h1 {
+  line-height: 0px;
+  padding: 1.7em 1em;
+  overflow: hidden;
+}
+
+.gameIcon {
+  display: flex;
+}
+.red_bg {
+  background-color: red;
+}
+.yellow_bg {
+  background-color: rgb(255, 183, 0);
+}
+.green_bg {
+  background-color: rgb(0, 198, 102);
+}
+.gray_bg {
+  background-color: gray;
+}
+
+.ratingNumber h1 {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.ratingNumber p {
+  font-size: 0.7em;
+}
+
+.ratingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 790px) {
+  .ratingDiv {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* .ratingNumber {
+    margin-top: 1em;
+  } */
+
+  .rated {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .ratingDiv ul {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+.previewImage {
+  width: 150px;
+}
+
+.previewImage img {
+  width: 150px;
+  margin-right: 0.7em;
+  max-width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.6em 0 0 0.6em;
+}
+/* .tr_td td {
+  width: 16.666% !important;
+} */
+.games_text {
+  display: flex;
+  margin-left: 1em;
+}
+.games_text h1 {
+  margin-left: 1em;
+  font-size: 1.3em;
+}
+.games_name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.playable {
+  text-transform: capitalize;
+  color: white;
+}
+
+.playableIcons {
+  width: 100px;
+}
+
+.playableIcons div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 1em;
+}
+
+.playableIcons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+
+.playableIcons div h3 {
+  color: rgb(217, 217, 217);
+}
+
+.blockchainData .blockchain_lenght {
+  background-color: #340182;
+  border-radius: 50%;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.blockchain_lenght h5 {
+  position: absolute;
+  color: #ffffff;
+  left: 5px;
+  font-weight: normal;
+  font-size: 10px;
+  list-style: none;
+  line-height: 0;
+  display: block;
+}
+
+.blockchainData {
+  /* display: flex;
+  height: 9em; */
+  padding: 1em 0;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80px;
+  /* flex-wrap: wrap; */
+}
+.blockchainData div {
+  display: flex;
+  max-width: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.blockchainData h4 {
+  background-color: rgba(88, 88, 88, 0.234);
+  color: white;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  text-align: left;
+  /* flex-grow: 1; */
+  font-size: 0.8em;
+
+  /* flex-basis: calc(20% - 20px); */
+}
+.blockchainData div div img {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.3em;
+  object-fit: cover;
+}
+
+.game_title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 0;
+  /* flex-wrap: wrap; */
+}
+.game_title_section {
+  width: 170px;
+}
+
+.game_title a h1 {
+  font-size: 1em;
+  overflow: hidden;
+  margin-right: 1em;
+}
+.operatingSystem_div {
+  width: 35px;
+}
+.versionNumber {
+  overflow: hidden;
+}
+
+.operatingSystemData {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.operatingSystemData img {
+  width: 25px;
+  object-fit: cover;
+  height: 25px;
+}
+.numberOfDownloads div,
+.versionNumber div,
+.genreData div {
+  display: flex;
+  padding: 1em 0;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.numberOfDownloads,
+.versionNumber,
+.genreData {
+  width: 30px;
+}
+
+.genreData div h4 {
+  font-size: 0.8em;
+  background-color: rgba(88, 88, 88, 0.234);
+  color: white;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  text-align: left;
+  margin-left: 0.5em;
+}
+@media screen and (min-width: 1199px) {
+  .tableMobileSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .tableSection {
+    display: none !important;
+  }
+}
+/* game_mobile_section */
+.tableMobileSection {
+  margin-top: 2em;
+  width: 100%;
+}
+.game_mobile_section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #210d42;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 0.6em;
+}
+
+.game_mobile_title_section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 0.6em;
+}
+.playable_blockchain_mobile_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mobile_section_details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobile_section_details .operatingSystem_div,
+.mobile_section_details .genreData,
+.mobile_section_details .versionNumber,
+.mobile_section_details .numberOfDownloads,
+.mobile_section_details .operatingSystem_div {
+  width: max-content;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.mobile_section_details .operatingSystem_div div,
+.mobile_section_details .genreData div,
+.mobile_section_details .versionNumber div,
+.mobile_section_details .numberOfDownloads div,
+.mobile_section_details .operatingSystem_div div {
+  width: 100%;
+  padding: 0.3em 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* height: 70px; */
+}
+
+.mobile_section_details .genreData div h4 {
+  margin: 0;
+}
+.operatingSystem_div section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.playable_icons_mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.playable_icons_mobile div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 0.5em;
+  width: 100%;
+}
+.playable_icons_mobile img {
+  width: 20px;
+  margin-right: 0.5em;
+}
+
+.blockchain_div div {
+  display: flex;
+}
+
+.playable_blockchain_mobile_section .blockchain_div div img {
+  width: 20px;
+  height: auto;
+  font-size: 0.4em;
+  margin-right: 0.6em;
+}
+
+.game_mobile_section .ratingNumber h1 {
+  font-size: 0.55em;
+  font-weight: bold;
+}
+
+.game_mobile_section a {
+  font-size: 1em;
+}
+
+.game_mobile_section .blockchainData {
+  padding: 0;
+  margin: 0;
+}

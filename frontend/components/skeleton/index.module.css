@@ -1,0 +1,42 @@
+.skeletonLoader {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.skeletonLoader_div {
+  padding: 1em;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skeletonHeader {
+  height: 20px;
+  width: 70%;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.skeletonContent {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #cccccc38;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 699px) {
+  .skeletonLoader {
+    flex-direction: column;
+  }
+
+  .skeletonLoader_div {
+    width: 100%;
+  }
+}

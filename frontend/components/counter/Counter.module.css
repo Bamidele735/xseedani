@@ -1,0 +1,28 @@
+/* styles/Counter.module.css */
+
+.counter {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  background-color: black;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.buttons button {
+  background-color: gray;
+  padding: 0.5em;
+}
+.buttons button img {
+  width: 20px;
+}
+.button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

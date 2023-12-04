@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+.TopRatedGames {
+  width: 95%;
+  padding: 1em;
+  background-color: #210d42;
+  border-radius: 12px;
+  margin: 2em auto 1em;
+}
+
+.TopRatedGames_section {
+  margin-bottom: 1em;
+  background-color: #280d54;
+  padding: 0.5em;
+
+  display: flex;
+  width: 100%;
+  border-radius: 0.9em;
+  justify-content: flex-start;
+}
+
+.categories_name .title_div_category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.categories_name .rating {
+}
+.categories_name .rating .red_bg {
+  border-radius: 0.5em;
+  background-color: red;
+}
+.categories_name .rating .yellow_bg {
+  border-radius: 0.5em;
+  background-color: rgb(255, 183, 0);
+}
+.categories_name .rating .green_bg {
+  background-color: rgb(0, 198, 102);
+  border-radius: 0.5em;
+}
+.categories_name .rating .gray_bg {
+  background-color: gray;
+  border-radius: 0.5em;
+}
+
+.TopRatedGames_section a {
+  display: flex;
+  border-radius: 0.9em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.categories_name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.TopRatedGames_section a {
+  border-radius: 0.9em;
+}
+
+.TopRatedGamesText {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.TopRatedGames_Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.TopRatedGames_Header img {
+  width: 30px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 0.5em;
+}
+
+.categories_name .rating h1 {
+  padding: 1.3em 0.5em;
+  line-height: 0;
+  font-size: 1em;
+  font-weight: bold;
+  width: 3rem;
+  text-align: center;
+}
+
+.TopRatedGames_Header h5 {
+  font-family: "Josefin Sans", sans-serif;
+
+  font-size: 1em;
+}
+
+.TopRatedGamesNo {
+  font-size: 1em;
+  margin: auto;
+  padding-right: 1em;
+}
+.TopRatedGames_Post_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.categories_name div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0.3em;
+  text-align: left;
+}
+
+.categories_name {
+  padding: 0.5em;
+}
+
+.TopRatedGames_Images_Section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.categories_name h4 {
+  margin-right: 0.4em;
+  border-radius: 0.3em;
+  text-align: center;
+  margin-bottom: 0.3em;
+  font-size: 0.8em;
+  color: rgb(207, 207, 207);
+}
+.categories_name p {
+  font-size: 0.7em;
+}
+/*  */
+
+/* Add the following if you want to transition the scaling */
+.TopRatedGames_section {
+  transition: transform 0.4s ease;
+}
+
+.imageTitle {
+  font-size: 1em;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  margin: auto 0;
+  overflow: hidden;
+}
+
+.TopRatedGames_section img {
+  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0.6em;
+}
+.category_title {
+  font-size: 1em;
+  margin: 0;
+}
+
+.categories_name p {
+  margin: auto 0.5em;
+}
+.browseBtn a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0.5em auto;
+}
+
+.browseBtn a button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0.5em auto;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.browseBtn a img {
+  width: 30px;
+  margin: auto 0.3em;
+}
+
+.browseBtn a button {
+  background-color: transparent;
+  border: 2px rgb(104, 0, 230) solid;
+  border-radius: 0.6em;
+  padding: 0.5em;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.browseBtn a button:hover {
+  background: linear-gradient(to right, #5500ff, #7700ff);
+}
+
+@media screen and (max-width: 1000px) {
+  .TopRatedGames {
+    margin: 2em auto 0;
+    padding: 1em;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .categories_name p {
+    font-size: 0.6em;
+  }
+  .categories_name .rating {
+    padding: 0.6em;
+    border-radius: 0.5em;
+    margin: auto 0.5em;
+  }
+
+  .categories_name .rating h1 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .categories_name p {
+    width: 100%;
+  }
+
+  .categories_name .rating {
+    padding: 0;
+    border-radius: 0.5em;
+  }
+
+  .imageTitle {
+    font-size: 0.6em;
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    margin: auto 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .categories_name {
+    padding: 0.2em;
+  }
+  .categories_name .rating {
+    padding: 0;
+    margin: auto 0.2em;
+  }
+  .categories_name h4 {
+    margin-right: 0.4em;
+    border-radius: 0.3em;
+    text-align: left;
+    margin-bottom: 0.3em;
+    font-size: 0.6em;
+    padding: 0;
+  }
+  .categories_name p {
+    display: none;
+  }
+
+  .TopRatedGamesNo {
+    padding-right: 0.6em;
+  }
+
+  .TopRatedGames_section img {
+    max-width: 35px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 0.3em;
+  }
+  .imageTitle {
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .TopRatedGames_Header h5 {
+    font-size: 0.6em;
+    font-weight: 600;
+  }
+  .browseBtn a button {
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 1em;
+    padding: 1em 2em;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .TopRatedGames_Images_Section {
+    display: flex;
+  }
+  .TopRatedGames {
+    margin: 1em 0;
+  }
+
+  .TopRatedGames_section {
+    margin: 0.2em;
+  }
+}

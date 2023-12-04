@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+.category_title {
+  font-size: 2em;
+  /* color: #10a5e6;
+  background-image: -webkit-linear-gradient(25deg, #10e682 1%, #dd00ff 13%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.video_link {
+  font-size: 1em;
+}
+
+.CategoriesHeader {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #e8e8e8f4;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 2em;
+  width: 100% !important;
+  margin: auto !important;
+}
+
+.rowx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.categories {
+  height: 100%;
+  /* Make it take up the full height */
+  border-radius: 1em;
+  margin: 1.5em 0;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+
+.categories_section {
+  height: 100%;
+  /* Make it take up the full height */
+  border-radius: 1em;
+  margin: 1.5em 0;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+
+.movie {
+  width: 18%;
+  padding: 1em;
+  float: left;
+  border-radius: 0.2em;
+}
+
+.Category_rowx {
+  display: table;
+  width: 100%;
+}
+
+.rowx h1 {
+  font-size: 3em;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+.video_file {
+  display: flex;
+  width: 18%;
+  padding: 1em;
+  float: left;
+  border-radius: 1em;
+}
+
+.categories img {
+  width: 100%;
+  /* Make the image fill the container width */
+  height: auto;
+  max-width: 1000px;
+  /* Make the image fill the container height */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the container */
+  object-position: center center;
+  /* Center the image within the container */
+  border-radius: 0.5em;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
+  box-shadow: 0px 1px 41px #5555554b;
+}
+
+.movie_file h3 {
+  padding: 1em 0;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1800px) {
+  .video_file {
+    width: 18%;
+    margin: 1em !important;
+    padding: 0 !important;
+  }
+
+
+  .movie_file {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 2em;
+    height: auto;
+
+  }
+
+  .categories img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1073px) {
+  .video_file {
+    width: 50%;
+  }
+
+
+}
+
+@media screen and (max-width: 1077px) {
+  .video_file {
+    width: 50%;
+  }
+
+  .categories {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .rowx h1 {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 1em 0;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .CategoriesHeader {
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 1em;
+    text-transform: capitalize;
+  }
+
+  .video_file {
+    width: 100%;
+  }
+
+}

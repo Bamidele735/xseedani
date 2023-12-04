@@ -1,0 +1,459 @@
+.spolight_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* position: relative; */
+  margin: 3em auto;
+}
+.PortableText {
+  height: 82px;
+}
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-height: 30em;
+}
+.embla__viewport {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.embla_container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  /* transform: translate3d(0, 0, 0) !important; */
+  transform: translateY(-50%);
+  width: 100%;
+
+  /* margin-left: calc(var(--slide-spacing) * -1); */
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  position: relative;
+}
+.embla__slide__img {
+  display: block;
+  height: var(--slide-height);
+  width: 60%;
+  object-fit: cover;
+}
+.embla__slide__number {
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-radius: 50%;
+  background-color: rgba(var(--background-site-rgb-value), 0.85);
+  line-height: 4.6rem;
+  font-weight: 900;
+  text-align: center;
+  pointer-events: none;
+}
+.embla__slide__number > span {
+  color: var(--brand-primary);
+  background-image: linear-gradient(
+    45deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.embla__button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.embla__buttons {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: unset;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.embla__buttons button {
+  color: white;
+  border-radius: 0.3em;
+  background: linear-gradient(to right, #ff8c00, #ff4500);
+  opacity: 1;
+}
+.embla__button {
+  z-index: 1;
+  color: var(--background-site);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.embla__button:disabled {
+  opacity: 0.3;
+}
+.embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+
+/*  */
+.sandbox {
+  width: 100%;
+}
+/* @media (min-width: 750px) {
+  .sandbox {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 67rem;
+  }
+} */
+.sandbox__carousel {
+  position: relative;
+  background-color: var(--background-code);
+}
+
+.sandbox__header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.sandbox__footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem 4rem 2rem;
+}
+.sandbox__footer__link {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  color: var(--text-low-contrast);
+  font-size: 1.4rem;
+}
+.sandbox__footer__link__svg {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  fill: currentColor;
+}
+.profileBanner img {
+  width: 75%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 1em;
+}
+@media (max-width: 1110px) {
+  .embla__slide__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .profileBanner img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+@media (max-width: 749px) {
+  .sandbox__carousel {
+    border-top: 0.1rem solid var(--detail-low-contrast);
+    border-bottom: 0.1rem solid var(--detail-low-contrast);
+  }
+}
+@media (max-width: 490px) {
+  .embla {
+    padding: 0.2rem;
+  }
+}
+@media (min-width: 750px) {
+  .sandbox__carousel {
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--detail-low-contrast);
+  }
+}
+
+/*  */
+
+.SpotLight {
+  width: 100%;
+  position: relative;
+}
+
+.review_position {
+  display: block;
+}
+
+/*  */
+.Review {
+  width: 50%;
+  backdrop-filter: blur(16px) saturate(144%);
+  -webkit-backdrop-filter: blur(16px) saturate(144%);
+  background-color: rgba(116, 116, 116, 0.07);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 3em;
+  border-radius: 0.7em;
+  top: 15%;
+  margin: auto 2em;
+  position: absolute;
+  right: 0;
+}
+.review_header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.people_review {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: end;
+}
+.review_sub_header_one {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.review_sub_header_one h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review_sub_header_one p {
+  color: rgb(218, 218, 218);
+}
+
+.review_sub_header_one p span {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.review_sub_header_one img {
+  background-color: blueviolet;
+  border-radius: 50%;
+  margin-right: 1em;
+  width: 40px;
+  height: 40px;
+}
+
+.review_game_name_dextop {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.review_game_name_mobile {
+  display: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.review_btn {
+  margin-top: 1.3em;
+  background: linear-gradient(to right, #ff8c00, #ff4500);
+  width: 100%;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+@media (max-width: 1110px) {
+  .Review {
+    width: 100%;
+    padding: 2em;
+    position: unset;
+    margin: 0;
+    padding: 3em;
+    border-radius: 0 0 0.5em 0.5em;
+    top: 0;
+
+    right: 0;
+  }
+  .game_rating {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .game_text_rating {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .all_rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .embla__buttons {
+    width: 95%;
+    margin: 0 0;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .embla_container {
+    width: 100%;
+  }
+
+  .embla__buttons {
+    width: 100%;
+    display: flex;
+    top: unset;
+    transform: translateY(-50%);
+    left: unset;
+    align-items: center;
+    flex-direction: row;
+  }
+  .embla__buttons button {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 628px) {
+  .Review {
+    width: 100%;
+    padding: 1em;
+    position: unset;
+    margin: 0;
+    border: 0;
+    border-radius: 0.7em;
+  }
+  .review_header {
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
+  }
+  .review_sub_header_one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .people_review {
+    width: 100%;
+    margin-top: 0.5em;
+    text-align: start;
+  }
+}
+@media (max-width: 562px) {
+  .game_rating {
+    font-size: 0.9em;
+  }
+
+  .all_rating h5 {
+    font-size: 1em;
+  }
+  .all_rating h6 {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 562px) {
+  .game_rating {
+    font-size: 0.9em;
+  }
+  .review_game_name_mobile {
+    font-size: 0.9em;
+  }
+
+  .all_rating h5 {
+    font-size: 1em;
+  }
+  .all_rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    width: 100%;
+  }
+  .green {
+    background-color: rgb(0, 178, 101);
+    border-radius: 0.5em;
+    padding: 0.5em 0.8em;
+    margin-right: 0.5em;
+    font-size: 1em;
+  }
+
+  .all_rating div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .profileBanner img {
+    height: 300px;
+  }
+  .review_sub_header_one {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .profileBanner img {
+    max-width: 70%;
+    width: 100vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.6em 0.6em 0 0;
+  }
+  .review_sub_header_one img {
+    width: 90px;
+    height: 90px;
+  }
+  .review_sub_header_one h1 {
+    font-size: 1.5em;
+  }
+  .review_sub_header_one p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 2450px) {
+  .profileBanner img {
+    max-width: 80%;
+    width: 100vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.6em 0.6em 0 0;
+  }
+}

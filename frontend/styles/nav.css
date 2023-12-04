@@ -1,0 +1,80 @@
+.Bg_wallet {
+  background-color: #26005b00;
+  color: white;
+  padding: 0.3em 1em;
+  border-radius: 0.2em;
+}
+.navLayout {
+  width: 100%;
+  height: 100%;
+}
+
+.navHeader {
+  width: 100%;
+}
+.nav_fixed {
+  margin-bottom: 2em;
+}
+
+.Bg_purple {
+  background: linear-gradient(to right, #ff00bf, #ff00b7);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.7em;
+  font-size: 1em;
+  text-align: center;
+  width: max-content;
+  cursor: pointer;
+}
+
+.navHeader nav .hs-collapse {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1023px) {
+  .navHeader img {
+    display: none;
+  }
+  .navHeader {
+    display: block;
+    padding: 0;
+  }
+  .nav_fixed {
+    position: unset;
+  }
+}
+
+.navHeader nav {
+  display: block;
+
+  /* max-width: 50%; */
+}
+
+@media screen and (max-width: 1240px) {
+  /* .navHeader {
+      width: 80%;
+      margin: auto 3em;
+    } */
+}
+
+@media screen and (max-width: 640px) {
+  /* .navHeader nav {
+      display: block;
+    } */
+}
+
+@media screen and (max-width: 270px) {
+  .navHeader nav {
+    max-width: 65%;
+    font-size: 0.8em;
+  }
+  .Bg_purple {
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+  }
+  .nav_fixed {
+    margin-bottom: 0;
+  }
+}

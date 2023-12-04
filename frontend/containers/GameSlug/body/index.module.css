@@ -1,0 +1,21 @@
+.tab_section {
+  width: 100%;
+  background-color: black;
+  padding: 0.5em;
+}
+
+.active_button {
+  background: linear-gradient(to right, #3f02a1, #5008c3);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .tablist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tab_section {
+    font-size: 0.8em;
+  }
+}

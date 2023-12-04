@@ -1,0 +1,113 @@
+.ReviewsPage_header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.gray_bg {
+  background-color: gray;
+}
+.red_bg {
+  background-color: red;
+}
+.yellow_bg {
+  background-color: rgb(255, 183, 0);
+}
+.green_bg {
+  background-color: rgb(0, 198, 102);
+}
+
+.ratingNumber {
+  padding: 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no_reviews {
+  text-align: center;
+}
+
+.ReviewsPage_header .review_profile_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.review_profile_title h1 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.review_profile_title p {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+.reviewerProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.ReviewsPage hr {
+  opacity: 0.1;
+  margin: 1em 0;
+}
+
+.ReviewsPage {
+  margin-top: 2em;
+  border-radius: 1em;
+  width: 100%;
+  padding: 2em;
+}
+
+.ReviewsPage_bg h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+.review_main {
+  margin: 2em 0;
+  padding: 2em;
+  background-color: #40008971;
+  border-radius: 0.5em;
+}
+.reviews_text {
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: visible; /* Show overflowing content without scrollbars */
+  max-width: 100%; /* Ensures the text doesn't overflow its container */
+  font-size: 16px; /* Default font size */
+  hyphens: auto;
+}
+
+@media screen and (max-width: 790px) {
+  .ReviewsPage_header {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .reviewerProfile {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .ReviewsPage {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+  }
+  .review_profile_title h1 {
+    font-size: 1em;
+  }
+  .review_profile_title h4 {
+    font-size: 0.8em;
+  }
+}

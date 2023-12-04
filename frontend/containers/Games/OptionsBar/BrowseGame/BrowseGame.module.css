@@ -1,0 +1,43 @@
+.BrowseGame {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.BrowseGame button {
+  width: 50%;
+  padding: 1em 1em;
+  background-color: #3c3c3c2e;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.BrowseGame button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.BrowseGame h1 {
+  font-size: 1em;
+  color: gainsboro;
+  width: 100%;
+}
+
+.dropDown_bg {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: #2424243d;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.dropDown_bg a:hover {
+  background-color: aliceblue;
+  color: purple;
+}

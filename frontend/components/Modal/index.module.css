@@ -1,0 +1,93 @@
+.modalBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+
+.iframeBody {
+  width: 100%;
+}
+.modalBody div {
+  background-color: rgb(1, 2, 18);
+}
+
+.modalTitle button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2em;
+}
+
+.modalBody iframe {
+  width: 85vw;
+  height: 70.25vh;
+  max-width: 4000px;
+  max-height: 2250px;
+}
+
+.modalDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.iframe_container {
+  display: block;
+}
+.modalBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  max-width: 100% !important;
+}
+.modalBody form {
+  display: flex;
+  justify-content: center !important;
+  width: 100%;
+  align-items: stretch !important;
+}
+
+.modalBodyTwo {
+  width: 60%;
+  display: flex;
+  margin: auto;
+}
+.modalTitle {
+  display: flex;
+}
+
+@media screen and (min-width: 1208px) {
+  .modalBody iframe {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 1208px) {
+  .modalBody iframe {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .modalBodyTwo {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  .modalBody iframe {
+    width: 85vw;
+    height: 70.25vh;
+  }
+  .modalBody {
+    width: 100%;
+  }
+  .modalBodyTwo {
+    width: 95%;
+  }
+}

@@ -1,0 +1,42 @@
+.mx_auto {
+  width: 100%;
+}
+.flexLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col50 {
+  width: 50%;
+  box-sizing: content-box !important;
+  margin: auto;
+  border-radius: 1em !important;
+}
+@media screen and (max-width: 1563px) {
+  /* .col50 {
+    margin-bottom: 1em;
+  } */
+  .mx_auto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1163px) {
+  .TopGamesCol,
+  .col50 {
+    width: 95%; /* Set width to 100% for full width in mobile view */
+    position: static; /* Reset position for mobile view */
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    display: block;
+  }
+  .flexLayout {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Align items to the end of the flex container */
+    width: 99%;
+  }
+}

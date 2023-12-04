@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "m7tx49fv",
+    "dataset": "comment"
+  },
+  "project": {
+    "name": "MetaXSeed Games",
+    "basePath": "/studio"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "cors": {
+    "origin": [
+      "http://localhost:3000"
+    ],
+    "credentials": true
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+.NodePageImg {
+  width: 100%;
+}
+.nodeSection {
+  position: relative;
+}
+.NodePage {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.nodeabsolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+.nodeabsolute img {
+  width: 200px;
+}
+.nodeabsolute h2 {
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .nodeabsolute h2 {
+    display: none;
+  }
+  .nodeabsolute img {
+    width: 100px;
+  }
+  .nodeabsolute {
+    width: inherit;
+  }
+}

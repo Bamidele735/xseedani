@@ -1,0 +1,170 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# unsed files
+/constants
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+.env
+.env.local
+
+# misc
+.DS_Store
+*.pem
+
+
+
+   <header className={styles.slug_header}>
+        <h2>Browse</h2> {`>`} <h1>{game.title}</h1>
+      </header>
+      {/*  */}
+
+      <main className={styles.slug_main}>
+        <div className={styles.slug_banner}></div>
+        <div className={styles.profileBanner}>
+          <img
+            src="https://cdn.spintop.network/game/482x448/482x448_dikey_thumbnail_arcus.webp"
+            alt="rexo"
+          />
+        </div>
+        <div className={styles.Slug_Main_section}>
+          <main className={styles.slugMain}>
+            {/* Slug Header */}
+            <section className={styles.slugHeader}>
+              <div className={styles.slugHeader_first_header}>
+                <div className={styles.slug_title_rating}>
+                  <h1 className={styles.ratingTextColor}>
+                    {" "}
+                    {game?.review.lenth === null || []
+                      ? "0"
+                      : game.review.lenght}
+                  </h1>
+                  <h1 className={styles.gameTitle}>{game.title}</h1>
+                </div>{" "}
+                <div className={styles.btn_div}>
+                  <button className={styles.Play_btn}>
+                    <Image src={Playbtn} width={500} alt="Playbtn" />
+                    Play
+                  </button>{" "}
+                  <button className={styles.Review_btn}>
+                    <Image src={Playbtn} width={500} alt="Playbtn" />
+                    Review this Game
+                  </button>
+                </div>
+              </div>
+              <div className={styles.slug_tags_section}>
+                <div className={styles.slug_text}>
+                  <h1>
+                    <Image src={Playbtn} width={500} alt="Playbtn" />
+                    Beta
+                  </h1>
+                  <h1>
+                    <Image src={Playbtn} width={500} alt="Playbtn" />
+                    Bravo Ready
+                  </h1>
+                  <h1>
+                    <Image src={Playbtn} width={500} alt="Playbtn" />
+                    Action
+                  </h1>
+                </div>{" "}
+                <div className={styles.game_link_div}>
+                  {game.websiteLink ? (
+                    <Link href={game.websiteLink} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image src={website} width={500} alt="Playbtn" />
+                      </button>{" "}
+                    </Link>
+                  ) : null}
+                  {game.downloadLocation ? (
+                    <Link href={game.downloadLocation} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image src={download} width={500} alt="downlod Icon" />
+                      </button>{" "}
+                    </Link>
+                  ) : null}
+                  {game.gameLink ? (
+                    <Link href={game.gameLink} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image src={link} width={500} alt="Game Link Icon" />
+                      </button>{" "}
+                    </Link>
+                  ) : null}
+                  {game.twitterLink ? (
+                    <Link href={game.twitterLink} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image src={twitter} width={500} alt=" Twitter Icon" />
+                      </button>{" "}
+                    </Link>
+                  ) : null}{" "}
+                  {game.telegramLink ? (
+                    <Link href={game.telegramLink} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image
+                          src={telegram}
+                          width={500}
+                          alt=" Telegram Icon"
+                        />
+                      </button>{" "}
+                    </Link>
+                  ) : null}{" "}
+                  {game.discordLink ? (
+                    <Link href={game.discordLink} target="_blank">
+                      {" "}
+                      <button>
+                        {" "}
+                        <Image src={discord} width={500} alt=" Discord Icon" />
+                      </button>{" "}
+                    </Link>
+                  ) : null}{" "}
+                </div>
+              </div>
+              {/* Slug Header */}
+            </section>
+
+            <section className={styles.Not_available}>
+              {/* slug body */}
+              <SlugBody game={game} />
+              {/* slug body */}
+            </section>
+
+            {/* review */}
+            <div className="flex flex-col max-w-2xl p-10 mx-auto my-10 rounded-lg shadow-lg shadow-black ">
+              <h3 className="pb-2 text-3xl">Reviews</h3>
+              <hr className="pb-2" />
+
+              {game?.review?.map((review) => (
+                <div key={review._id}>
+                  <p>
+                    <span className="text-gray-500"> {review.name} : </span>{" "}
+                    {review.review}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </main>
+        </div>
+      </main>
+
+      

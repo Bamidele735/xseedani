@@ -1,0 +1,39 @@
+/* .flex_SignIn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+} */
+
+.flex_SignIn img {
+  object-fit: cover;
+  height: 40vh;
+  width: 100%;
+}
+.flex_SignIn_wallet {
+  font-size: 2em;
+}
+
+.flex_SignIn_wallet {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex_SignIn_wallet button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.6em;
+  border: 2px solid orange;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  padding: 0.5em;
+}

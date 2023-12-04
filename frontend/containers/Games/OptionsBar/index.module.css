@@ -1,0 +1,35 @@
+.OptionsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(18, 0, 50);
+  border-radius: 1em;
+  padding: 2em 3em;
+  margin: 2em auto;
+  overflow: scroll;
+}
+
+.OptionsBar button {
+  width: 23vw;
+  padding: 1em 1em;
+  background-color: rgba(60, 60, 60, 0.181);
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+
+.OptionsBar button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.OptionsBar h1 {
+  font-size: 1em;
+  color: gainsboro;
+}
